@@ -33,25 +33,25 @@ This project provides a comprehensive solution for extracting and analyzing fina
 
 ### Setup Instructions
 
-## 1. Clone the Repository
+#### 1. Clone the Repository
 
     git clone https://github.com/ravindul97/financial-analyser-ai-agent.git
     cd financial-analyser-ai-agent
 
-## 2. Create and activate a virtual environment:
-# Windows:
+#### 2. Create and activate a virtual environment:
+##### Windows:
     python -m venv .venv
     .\.venv\Scripts\Activate.ps1
 
-# macOS/Linux:
+##### macOS/Linux:
     python -m venv .venv
     source .venv/bin/activate
 
-## 3. Install the required dependencies:
+#### 3. Install the required dependencies:
     pip install -r requirements.txt
 
-## 4. Using Environment Variables
-# create a .env file in the root directory with below keys or modify the src/backend/core/config.py file
+#### 4. Using Environment Variables
+##### create a .env file in the root directory with below keys or modify the src/backend/core/config.py file
     GOOGLE_API_KEY=your_google_api_key_here
     PINECONE_API_KEY=your_pinecone_api_key_here
     PINECONE_INDEX_NAME=your_pinecone_index_name_here
@@ -63,7 +63,7 @@ This project provides a comprehensive solution for extracting and analyzing fina
 The application consists of two main components: 
 The backend API and the frontend interface. Both need to be running simultaneously.
 
-## Step 1: Start the Backend Server
+#### Step 1: Start the Backend Server
 
 1. Open a terminal and navigate to the project root directory.
 
@@ -80,7 +80,7 @@ The backend API and the frontend interface. Both need to be running simultaneous
 4. The backend API will be available at http://127.0.0.1:8000
 
 
-## Step 2: Launch the Frontend Dashboard
+#### Step 2: Launch the Frontend Dashboard
 
 1. Open a new terminal window (keep the backend server running)
 

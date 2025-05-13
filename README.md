@@ -51,7 +51,7 @@ This project provides a comprehensive solution for extracting and analyzing fina
     pip install -r requirements.txt
 
 #### 4. Using Environment Variables
-##### create a .env file in the root directory with below keys or modify the src/backend/core/config.py file
+##### create a .env file in the root directory with below keys or modify the src/backend/core/config.py file. (API Keys are in Final Report-Appendix 2)
     GOOGLE_API_KEY=your_google_api_key_here
     PINECONE_API_KEY=your_pinecone_api_key_here
     PINECONE_INDEX_NAME=your_pinecone_index_name_here

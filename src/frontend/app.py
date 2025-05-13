@@ -201,14 +201,16 @@ if st.session_state.visualization_ready:
         title="Income vs Expenses - REXP"
     )
 
-    #Expenses Distribution
-    fig_dipd_exp_dist = px.pie(
-        dipd_filtered[dipd_filtered["Data Point Name"] == "Operating Expenses"].melt(var_name="Date", value_name="Value"),
-        names="Date", values="Value", title="Expenses Dist. - DIPD"
+    #Revenue Distribution (DIPD)
+    fig_dipd_revenue_dist = px.pie(
+        dipd_filtered[dipd_filtered["Data Point Name"] == "Revenue"].melt(var_name="Date", value_name="Value"),
+        names="Date", values="Value", title="Revenue Distribution - DIPD"
     )
-    fig_rexp_exp_dist = px.pie(
-        rexp_filtered[rexp_filtered["Data Point Name"] == "Operating Expenses"].melt(var_name="Date", value_name="Value"),
-        names="Date", values="Value", title="Expenses Dist. - REXP"
+
+    #Net Income Distribution (REXP)
+    fig_rexp_net_income_dist = px.pie(
+        rexp_filtered[rexp_filtered["Data Point Name"] == "Net Income"].melt(var_name="Date", value_name="Value"),
+        names="Date", values="Value", title="Net Income Distribution - REXP"
     )
 
     #Chart layout
@@ -222,8 +224,9 @@ if st.session_state.visualization_ready:
     row4 = st.columns(4)
     row4[0].plotly_chart(fig_dipd_income_exp, use_container_width=True)
     row4[1].plotly_chart(fig_rexp_income_exp, use_container_width=True)
-    row4[2].plotly_chart(fig_dipd_exp_dist, use_container_width=True)
-    row4[3].plotly_chart(fig_rexp_exp_dist, use_container_width=True)
+    row4[2].plotly_chart(fig_dipd_revenue_dist, use_container_width=True)
+    row4[3].plotly_chart(fig_rexp_net_income_dist, use_container_width=True)
+
 
 #Chatbot Section
 st.subheader("Chatbot")

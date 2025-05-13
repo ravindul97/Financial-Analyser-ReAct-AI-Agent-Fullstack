@@ -67,14 +67,15 @@ The backend API and the frontend interface. Both need to be running simultaneous
 
 1. Open a terminal and navigate to the project root directory.
 
-2. Activate the virtual environment:
-    Windows:
-        .\.venv\Scripts\Activate.ps1
+2. Activate the virtual environment (if not activated):
+##### Windows:
+    .\.venv\Scripts\Activate.ps1
 
-    macOS/Linux:
-        source .venv/bin/activate
+##### macOS/Linux:
+    source .venv/bin/activate
 
 3. Start the FastAPI backend server:
+##### Run:
     python -m uvicorn src.backend.main:app --host 127.0.0.1 --port 8000 --reload
 
 4. The backend API will be available at http://127.0.0.1:8000
@@ -87,13 +88,14 @@ The backend API and the frontend interface. Both need to be running simultaneous
 2. Navigate to the project root directory
 
 3. Activate the virtual environment:
-    Windows:
-        .\.venv\Scripts\Activate.ps1
+##### Windows:
+    .\.venv\Scripts\Activate.ps1
 
-    macOS/Linux:
-        source .venv/bin/activate
+##### macOS/Linux:
+    source .venv/bin/activate
 
 4. Start the Streamlit frontend application:
+##### Run:
     python -m streamlit run src/frontend/app.py
 
 5. The dashboard will open automatically in your default web browser at http://localhost:8501

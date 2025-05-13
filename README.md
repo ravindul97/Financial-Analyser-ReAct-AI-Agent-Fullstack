@@ -121,7 +121,7 @@ The backend API and the frontend interface. Both need to be running simultaneous
 
 ### Uninstall/Remove Environments
 ##### windows
-deactivate  
+    deactivate  
 
 ------------------------------------------------------------------------
 

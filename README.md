@@ -120,12 +120,11 @@ The backend API and the frontend interface. Both need to be running simultaneous
 ------------------------------------------------------------------------
 
 ### Uninstall/Remove Environments
-
-deactivate  #windows
+##### windows
+deactivate  
 
 ------------------------------------------------------------------------
 
 ### Documentation
 Access the Swagger UI documentation: http://127.0.0.1:8000/docs
 
-"# financial-analyser-ai-agent" 
